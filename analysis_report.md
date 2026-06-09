@@ -1,5 +1,5 @@
 # Network Traffic Analysis Report
-**Task 5 – Network Packet Capture using Wireshark**
+**Network Packet Capture using Wireshark**
 
 ---
 
@@ -99,28 +99,4 @@ eth
 
 ---
 
-## 6. Interview Question Answers
 
-**Q1. What is Wireshark used for?**
-Wireshark is a network protocol analyzer used to capture and inspect packets on a network interface in real time for troubleshooting, security analysis, and protocol learning.
-
-**Q2. What is a packet?**
-A packet is a unit of data transmitted over a network, containing a header (source/destination IPs, protocol) and a payload (actual data).
-
-**Q3. How to filter packets in Wireshark?**
-Using display filters in the filter bar. Examples: `dns`, `tcp`, `icmp`, `ip.addr == 8.8.8.8`, `tcp.port == 443`.
-
-**Q4. What is the difference between TCP and UDP?**
-TCP is connection-oriented with guaranteed, ordered delivery using handshakes and acknowledgments. UDP is connectionless and faster but with no delivery guarantee — used for DNS, QUIC, video streaming.
-
-**Q5. What is a DNS query packet?**
-A DNS query is sent by a client to a DNS server to resolve a domain name to an IP address. It uses UDP port 53 and is visible in plaintext.
-
-**Q6. How can packet capture help in troubleshooting?**
-It allows engineers to see exact traffic — identify failed connections, unusual traffic patterns, misconfigured protocols, latency issues, or network attacks.
-
-**Q7. What is a protocol?**
-A protocol is a set of rules governing how data is formatted and transmitted between devices (e.g., TCP, DNS, QUIC, HTTP).
-
-**Q8. Can Wireshark decrypt encrypted traffic?**
-Not by default. TLS/QUIC traffic can only be decrypted if session keys are provided via an SSL key log file. Without keys, only metadata is visible.
